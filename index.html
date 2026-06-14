@@ -15,81 +15,316 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Lorem, ipsum dolor.</h1>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-      voluptatum cum magni temporibus quisquam perferendis repellat facilis
-      repudiandae ex! Nobis, ratione veritatis? Sequi incidunt nisi temporibus
-      praesentium voluptatibus ipsum possimus.
-    </p>
-    <h1 style="font-family: &quot;Playfair Display&quot;">PlayFair Display.</h1>
-    <p style="font-family: &quot;Playfair Display&quot;">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-      voluptatum cum magni temporibus quisquam perferendis repellat facilis
-      repudiandae ex! Nobis, ratione veritatis? Sequi incidunt nisi temporibus
-      praesentium voluptatibus ipsum possimus.
-    </p>
-    <h1 style="font-family: Roboto">Roboto.</h1>
-    <p style="font-family: Roboto">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-      voluptatum cum magni temporibus quisquam perferendis repellat facilis
-      repudiandae ex! Nobis, ratione veritatis? Sequi incidunt nisi temporibus
-      praesentium voluptatibus ipsum possimus.
-    </p>
+    <header>
+      <img
+        srcset="
+          ./images/focus-640w.jpg   640w,
+          ./images/focus-1280w.jpg 1280w,
+          ./images/focus-1920w.jpg 1920w
+        "
+        sizes="
+        (width <= 640px) 640px,
+        (width <= 1280px) 1280px,
+        1920px
+        "
+        src="./images/focus-1920w.jpg"
+        alt=""
+      />
+      <h1>Nari Choi</h1>
+    </header>
 
-    <button type="button" aria-labelledby="github-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="github-icon-title">Github</title>
-        <use href="#icon-github" role="img"></use>
-      </svg>
-    </button>
+    <main>
+      <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error placeat
+          eos nemo nostrum tenetur, esse corporis excepturi, illum,
+          necessitatibus quibusdam inventore. Delectus sapiente deleniti labore
+          quidem enim asperiores, laboriosam facilis optio necessitatibus
+          tempore explicabo dolores culpa magni, maxime ratione consequuntur.
+          Quasi aliquam consequatur a totam.
+        </p>
 
-    <button type="button" aria-labelledby="linkedin-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="linkedin-icon-title">LinkedIn</title>
-        <use href="#icon-linkedin" role="img"></use>
-      </svg>
-    </button>
+        <section aria-label="Socials">
+          <button aria-labelledby="github-icon-title">
+            <svg width="45" height="45" aria-hidden="true">
+              <title id="github-icon-title">Github</title>
+              <use href="#icon-github" role="img"></use>
+            </svg>
+          </button>
+          <button aria-labelledby="linkedin-icon-title">
+            <svg width="45" height="45" aria-hidden="true">
+              <title id="linkedin-icon-title">Linkedin</title>
+              <use href="#icon-linkedin" role="img"></use>
+            </svg>
+          </button>
+          <button aria-labelledby="twitter-icon-title">
+            <svg width="45" height="45" aria-hidden="true">
+              <title id="twitter-icon-title">Twitter</title>
+              <use href="#icon-twitter" role="img"></use>
+            </svg>
+          </button>
+        </section>
+      </section>
 
-    <button type="button" aria-labelledby="twitter-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="twitter-icon-title">Twitter</title>
-        <use href="#icon-twitter" role="img"></use>
-      </svg>
-    </button>
+      <section>
+        <h2>My work</h2>
 
-    <button type="button" aria-labelledby="email-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="email-icon-title">Email</title>
-        <use href="#icon-email" role="img"></use>
-      </svg>
-    </button>
+        <section aria-label="Projects">
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
 
-    <button type="button" aria-labelledby="phone-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="phone-icon-title">Phone</title>
-        <use href="#icon-phone" role="img"></use>
-      </svg>
-    </button>
+            <h3 class="project-name">Project name</h3>
 
-    <button type="button" aria-labelledby="open-in-new-icon-title">
-      <svg width="50" height="50" aria-hidden="true">
-        <title id="open-in-new-icon-title">Open In New Tab</title>
-        <use href="#icon-open-in-new" role="img"></use>
-      </svg>
-    </button>
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
+
+            <h3 class="project-name">Project name</h3>
+
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
+
+            <h3 class="project-name">Project name</h3>
+
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
+
+            <h3 class="project-name">Project name</h3>
+
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
+
+            <h3 class="project-name">Project name</h3>
+
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+
+          <div class="card project">
+            <div class="head">
+              <span aria-hidden="true">screenshot of project</span>
+            </div>
+
+            <h3 class="project-name">Project name</h3>
+
+            <section class="project-links">
+              <button aria-labelledby="github-icon-title">
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="github-icon-title">Github</title>
+                  <use href="#icon-github" role="img"></use>
+                </svg>
+              </button>
+              <a
+                href="#"
+                target="_blank"
+                aria-labelledby="open-in-new-icon-title"
+              >
+                <svg width="30" height="30" aria-hidden="true">
+                  <title id="open-in-new-icon-title">
+                    Open Project In New Tab
+                  </title>
+                  <use href="#icon-open-in-new" role="img"></use>
+                </svg>
+              </a>
+            </section>
+
+            <p class="project-description">
+              Short description of the project. Just a couple sentences will do.
+            </p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <h2>Contact me</h2>
+      <p>
+        Please get in touch if you think our work could be mutually beneficial!
+      </p>
+
+      <address>
+        <span class="address">
+          1234 Random Road<br />
+          Random Town, California 12345<br />
+        </span>
+
+        <p class="contact-info">
+          <span class="phone">555-555-5555</span><br />
+          <span class="email">narichoi.is.not.real@gmail.com</span>
+        </p>
+      </address>
+
+      <section aria-label="Socials">
+        <button aria-labelledby="github-icon-title">
+          <svg width="45" height="45" aria-hidden="true">
+            <title id="github-icon-title">Github</title>
+            <use href="#icon-github" role="img"></use>
+          </svg>
+        </button>
+        <button aria-labelledby="linkedin-icon-title">
+          <svg width="45" height="45" aria-hidden="true">
+            <title id="linkedin-icon-title">Linkedin</title>
+            <use href="#icon-linkedin" role="img"></use>
+          </svg>
+        </button>
+        <button aria-labelledby="twitter-icon-title">
+          <svg width="45" height="45" aria-hidden="true">
+            <title id="twitter-icon-title">Twitter</title>
+            <use href="#icon-twitter" role="img"></use>
+          </svg>
+        </button>
+      </section>
+    </footer>
 
     <img
-      src="./images/focus-1920w.jpg"
-      alt="Woman looking at computer."
-      width="500"
-      height="750"
-    />
-    <img
+      srcset="
+        ./images/smile-640w.jpg   640w,
+        ./images/smile-1280w.jpg 1280w,
+        ./images/smile-1920w.jpg 1920w
+      "
+      sizes="
+        (width <= 640px) 640px,
+        (width <= 1280px) 1280px,
+        1920px
+        "
       src="./images/smile-1920w.jpg"
-      alt="Woman smiling."
-      width="500"
-      height="750"
+      alt="Nari Choi"
     />
 
     <svg style="display: none" aria-hidden="true">
