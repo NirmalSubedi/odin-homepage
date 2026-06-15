@@ -2,6 +2,21 @@
 
 Responsive webpage that changes layouts when resizing the window (i.e., viewport).
 
+[View webpage!](https://nirmalsubedi.github.io/odin-homepage/)
+
+## Description
+
+Task is to create a page that changes layout at different device sizes. The layout of the pages are specified below.
+
+Desktop Layout:
+![Desktop layout of homepage.](./images/layouts/portfolio.png)
+
+Tablet Layout:
+![Tablet layout of homepage.](./images/layouts/portfolio-tablet.png)
+
+Mobile Layout:
+![Mobile layout of homepage.](./images/layouts/portfolio-mobile.png)
+
 ## Skills demonstrated
 
 - Creating breakpoints with css **media queries** to change page layout.
