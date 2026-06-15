@@ -9,8 +9,6 @@
   --clr-gold: rgb(209, 186, 58);
   --clr-blanchedalmond: rgb(216, 181, 127);
 
-  --clr-button-hover: var(--clr-neutral-900);
-
   --clr-neutral-900: rgb(85, 85, 85);
 
   --fs-900: clamp(3rem, 2.5rem + 6vw, 8rem);
@@ -117,6 +115,30 @@ header h1 {
 
 header img {
   box-shadow: 5px 5px 20px -10px var(--clr-black);
+}
+
+@media (min-width: 600px) {
+  body {
+    overflow: hidden;
+  }
+  header {
+    width: 100%;
+    overflow: revert;
+    place-self: start;
+    display: block;
+  }
+  header h1 {
+    top: 0;
+    left: auto;
+    right: 0;
+    translate: 70% 0.5em;
+    font-size: var(--fs-800);
+  }
+  header img {
+    max-width: 50vw;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
 }
 
 main,
